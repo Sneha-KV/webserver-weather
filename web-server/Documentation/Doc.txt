@@ -1,0 +1,26 @@
+
+Load express -> const app = express();
+express get-> 
+args:
+1. domain
+2. call back with args(request, reponse) 
+
+* To start a server -> app.listen(port_number, callback function)
+
+* Send some data to browser-> app.get('/path_or_route',()=> {
+    //send something
+})
+
+We can Send html/ Json etc etc or we can use the static html pages using app.use(express.static(path_of_the_html_page));
+
+** Dynamic text -> use handle bars with Express  -> app.set()
+-> npm i hbs@versionNumber
+
+res.render(file_name, object_to_render) -> to render through Handle bar
+1. file_name -> defaultly it has to be in a folder named 'views'
+             -> To set up a customized Path, use app.set('views', 'new_folder')
+
+
+*** PARTIALS ***
+app.registerPartials(partials_path)
+
