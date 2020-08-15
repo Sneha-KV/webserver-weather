@@ -67,7 +67,7 @@ app.get('/weather', (req, res) => {
             }); 
        }
        // sending lat, lon and units parameters
-        forecast(latitude, longitude, 'm', (error, {weather, currentTemp, feelsLike} = {}) => {
+        forecast(latitude, longitude, 'm', (error, {weather, currentTemp, feelsLike, humidity, weatherIcon} = {}) => {
             if(error) {
                 return res.send({ 
                     error : 'Please set a valid address'
@@ -79,7 +79,9 @@ app.get('/weather', (req, res) => {
                 location,
                 weather,
                 currentTemp,
-                feelsLike
+                feelsLike,
+                humidity,
+                weatherIcon
             }
             res.send(weatherObj)
 

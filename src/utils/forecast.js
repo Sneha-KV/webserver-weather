@@ -18,11 +18,15 @@ const forecast = (latitude, longitude, units,  callback) => {
             weather = currentObj.weather_descriptions[0],
             currentTemp = currentObj.temperature,
             feelsLike = currentObj.feelslike,
+            humidity = currentObj.humidity,
+            weatherIcon = currentObj.weather_icons[0],
             data = {
                 location,
                 weather,
                 currentTemp,
-                feelsLike
+                feelsLike,
+                humidity,
+                weatherIcon
             }
 
             callback(undefined,data);
