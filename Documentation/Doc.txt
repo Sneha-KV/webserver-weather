@@ -3,6 +3,16 @@ go to web-sever folder and run -> npm install
 Creating SSH key -> git bash (windows) or terminal (in mac):
 command: ssh-keygen -t rsa -b 4096 -C "mail"
 
+SSH-> https://deloittedevelopment.udemy.com/course/the-complete-nodejs-developer-course-2/learn/lecture/13729098#notes
+
+DEPLOYING TO HEROKU:
+https://deloittedevelopment.udemy.com/course/the-complete-nodejs-developer-course-2/learn/lecture/13729100#notes
+
+https://weather-app-kv.herokuapp.com/ | https://git.heroku.com/weather-app-kv.git
+
+
+
+
 Load express -> const app = express();
 express get-> 
 args:
