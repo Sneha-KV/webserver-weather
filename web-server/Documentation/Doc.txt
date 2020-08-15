@@ -1,3 +1,5 @@
+go to web-sever folder and run -> npm install
+
 
 Load express -> const app = express();
 express get-> 
