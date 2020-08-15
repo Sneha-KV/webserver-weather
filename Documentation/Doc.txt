@@ -8,9 +8,11 @@ SSH-> https://deloittedevelopment.udemy.com/course/the-complete-nodejs-developer
 DEPLOYING TO HEROKU:
 https://deloittedevelopment.udemy.com/course/the-complete-nodejs-developer-course-2/learn/lecture/13729100#notes
 
-https://weather-app-kv.herokuapp.com/ | https://git.heroku.com/weather-app-kv.git
-
-
+heroku keys:add -> to add ssh key
+heroku create application-name 
+package.json -> scripts -> write the code we have to run (node src/app.js) in scripts object as -> "start" : "node xyz.js"
+https://weather-app-skv.herokuapp.com/ | https://git.heroku.com/weather-app-skv.git
+ port of heroku process.env.PORT
 
 
 Load express -> const app = express();

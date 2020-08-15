@@ -8,7 +8,7 @@ console.log('Client side js loaded');
 
 weatherForm.addEventListener('submit', (e)=> {
     e.preventDefault();
-    const weatherUrl = 'http://localhost:3000/weather?address='+searchField.value;
+    const weatherUrl = '/weather?address='+searchField.value;
     foreCastMsg.textContent = 'Loading...';
     errorMsg.textContent = '';
     fetch(weatherUrl).then(weatherSuccess, weatherFailure);

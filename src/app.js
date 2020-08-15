@@ -2,9 +2,10 @@ const path = require('path');
 const express = require('express');
 const hbs = require('hbs');
 const geoCode = require('./utils/geocode.js');
-const forecast = require('./utils/forecast.js')
+const forecast = require('./utils/forecast.js');
 
 const app = express();
+const port = process.env.PORT || 3000; // if local -> use 3000 port else use port given by heroku
 
 //Define paths for Express config
 const publicDirectoryPath = path.join(__dirname,'../public');
@@ -122,28 +123,9 @@ app.get('*', (req,res) => {
     })
 })
 
-// http://localhost:3000/
-// app.get('', (req, res) => {
-//     res.send('<h1>Hello Express!</h1>')
-// });
-
-// http://localhost:3000/help
-// app.get('/help', (req, res) => {
-//     res.send([{name: 'Sneha', age: 24}, {name: 'Lahari'}])
-// });
-
-// // about
-// app.get('/about', (req, res) => {
-//     res.send('<h1>About page</h1>')
-// }); 
-
-
-
-
-
 
 // app.com/help
 
-app.listen(3000, ()=>{
-    console.log('Server started');
+app.listen(port, ()=>{
+    console.log('Server started at port '+port);
 })
