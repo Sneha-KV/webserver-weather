@@ -1,5 +1,7 @@
 go to web-sever folder and run -> npm install
 
+Creating SSH key -> git bash (windows) or terminal (in mac):
+command: ssh-keygen -t rsa -b 4096 -C "mail"
 
 Load express -> const app = express();
 express get-> 
