@@ -42,8 +42,8 @@ app.get('/help', (req, res) => {
     res.render('help', {
         title: 'Help',
         name: 'Sneha',
-        question: 'What are you learning?',
-        answer: 'I am learning Node'
+        question: 'What are the APIs used?',
+        answer: 'Weather stack and map box'
     })
 });
 
